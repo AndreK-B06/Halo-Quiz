@@ -5,28 +5,36 @@
 /* -----------
 !!!!!! Text !!!!!!
 -------------------- */
+:root {
+  --dark-blue: #0b357e;
+  --platinum: #d7dedc;
+  --Blue: #b2dafa;
+}
 h1 {
   text-align: center;
-  color: #0b0a07;
 }
 h2 {
   padding: 20px;
-  color: #0b0a07;
 }
 p {
   font-size: 20px;
-  text-decoration: underline #0b0a07;
+  text-decoration: underline;
 }
 p,
 li {
   padding: 10px 0px;
-  color: #0b0a07;
+}
+p,
+li,
+h2,
+h1 {
+  color: var(--platinum);
 }
 /* -----------
 !!!!!! Body !!!!!!
 -------------------- */
 body {
-  background-color: #550467;
+  background-color: var(--Blue);
 }
 
 #quiz {
@@ -38,10 +46,8 @@ body {
   width: 70%;
   margin: 50px auto;
   padding: 0 25px 40px 10px;
-  background-color: #9e1fe3;
-  border: 4px solid #b0e0e6;
+  background-color: var(--dark-blue);
   border-radius: 5px;
-  color: #eceaea;
   font-weight: bold;
   box-shadow: 5px 5px 5px #888;
 }
@@ -66,14 +72,14 @@ body {
   padding-right: 5px;
   position: relative;
   float: right;
-  background-color: #dcdcdc;
-  color: #dcdcdc;
+  background-color: var(--platinum);
+  color: var(--dark-blue);
   margin: 0 2px 0 2px;
 }
 
 .button.active {
   background-color: #f8f8ff;
-  color: #525252;
+  color: gray;
 }
 
 button {
